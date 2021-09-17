@@ -1,0 +1,38 @@
+#include<iostream>
+#include <fstream>
+#include <sstream>
+#include <string>
+using std::string, std::ifstream, std::cin, std::cout, std::endl;
+
+int main() 
+{
+    int first;
+    int second;
+    int third;
+    cin>>first;
+    cin>>second;
+    cin>>third;
+    int n=first;
+    int k = second;
+    int l = third;
+    int order[n] = {};
+    int lsqr;
+    int ksqr;
+
+
+
+    for(int i = 0; i<=n; ++i)
+    {
+        lsqr = l*i;
+        ksqr = k*i;
+
+
+        if(lsqr<10 || ksqr<10)
+        {
+            order[n] = lsqr;
+            order[n] = ksqr;
+        }
+    }
+
+        cout<<order<<" ";
+}
